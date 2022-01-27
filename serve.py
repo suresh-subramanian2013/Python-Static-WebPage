@@ -10,7 +10,7 @@ app.config['passw'] = environ.get('PASSWORD')
 @app.route("/")
 def hello():
 
-    return render_template('index.html', user=environ.get('TC_USERNAME'), passw=environ.get('TC_PASSWORD'))
+    return render_template('index.html', user=environ.get('USERNAME'), passw=environ.get('PASSWORD'))
 
 
 if __name__ == "__main__":
