@@ -4,8 +4,8 @@ from flask import render_template
 
 app = Flask(__name__)
 
-app.config['tc_user'] = environ.get('TC_USERNAME')
-app.config['tc_passw'] = environ.get('TC_PASSWORD')
+app.config['user'] = environ.get('USERNAME')
+app.config['passw'] = environ.get('PASSWORD')
 
 @app.route("/")
 def hello():
